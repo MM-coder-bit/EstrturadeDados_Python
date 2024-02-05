@@ -12,7 +12,8 @@ class VetorNaoOrdenado:
     else:
       for i in range(self.ultima_posicao + 1):
         print(i, ' - ', self.valores[i])
-  
+
+  # Big-O constante -0(1)
   def insere(self, valor):
     if self.ultima_posicao == self.capacidade - 1:
       print('Capacidade máxima atingida')
@@ -20,12 +21,14 @@ class VetorNaoOrdenado:
       self.ultima_posicao += 1
       self.valores[self.ultima_posicao] = valor
 
+  # Big-O linear - O(n)
   def pesquisar(self, valor):
     for i in range(self.ultima_posicao + 1):
       if valor == self.valores[i]:
         return i
     return -1
 
+  # Big-O linear - O(n)
   def excluir(self, valor):
     posicao = self.pesquisar(valor);
     if posicao == -1:

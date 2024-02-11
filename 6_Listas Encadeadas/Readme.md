@@ -44,7 +44,9 @@ Uma lista encadeada simples é uma estrutura de dados na qual cada elemento da l
    - Mostrar lista
    - Pesquisar
    - Excluir da Posição
+   - 
 # _________________________________
+
 
 # Lista Encadeada com Extremidades Duplas (Duplamente Encadeada)
 
@@ -68,16 +70,30 @@ Uma lista encadeada com extremidades duplas possui uma estrutura semelhante à l
    - Mostrar lista
    - Pesquisar
    - Excluir da Posição
+   - 
+# _________________________________
 
+**Lista Duplamente Encadeada:**
 
+Uma lista duplamente encadeada é uma estrutura de dados na qual cada elemento da lista, chamado nó, possui referências tanto para o próximo nó quanto para o nó anterior na sequência. Isso permite a navegação bidirecional na lista, proporcionando vantagens específicas em determinados cenários.
 
+<img src="images\DuplamenteEncadeada.png" width="800" height="200">
 
+### **Prós:**
 
+1. **Acesso Bidirecional:**
+   - A capacidade de percorrer a lista tanto para frente quanto para trás, o que pode ser útil em certos tipos de operações.
 
+2. **Inserção e Exclusão Eficientes:**
+   - Inserir e excluir elementos no início ou no final da lista é mais eficiente do que em listas encadeadas simples, pois envolve a manipulação de dois conjuntos de ponteiros.
 
+3. **Exclusão Eficiente do Último Elemento:**
+   - A remoção do último elemento é mais eficiente, pois o nó anterior ao último já tem uma referência nula no próximo.
 
-**Escolha entre Lista Encadeada Simples e Duplamente Encadeada:**
+### **Contras:**
 
-- Se o acesso sequencial é mais comum e a economia de espaço é crucial, uma lista encadeada simples pode ser mais apropriada.
-- Se operações de inserção e remoção frequentes no meio da lista são comuns, e o acesso bidirecional é vantajoso, a lista encadeada duplamente encadeada é uma escolha melhor.
-- A escolha depende dos requisitos específicos de eficiência, uso de memória e padrões de acesso na aplicação.
+1. **Maior Uso de Memória:**
+   - Cada nó em uma lista duplamente encadeada exige armazenamento adicional para as referências tanto para o próximo quanto para o anterior, resultando em maior consumo de memória em comparação com listas encadeadas simples.
+
+2. **Complexidade Adicional:**
+   - A implementação e manutenção de listas duplamente encadeadas são mais complexas devido à gestão de dois conjuntos de ponteiros. Isso pode aumentar a chance de erros e tornar o código mais difícil de entender.

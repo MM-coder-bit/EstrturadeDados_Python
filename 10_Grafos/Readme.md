@@ -1,3 +1,4 @@
+
 # Grafos
 
 Um grafo é uma estrutura de dados que representa relações entre elementos. Consiste em um conjunto de vértices (ou nós) e um conjunto de arestas (ou arcos) que conectam pares de vértices. Os grafos podem ser direcionados, onde as arestas têm uma direção específica, ou não direcionados.
@@ -49,22 +50,30 @@ G | 0 0 1 0 0 0 0
 
 ## Algoritmos e Operações
 
-### Caminhos
+### Busca em Profundidade
 
-- **Caminho:** Sequência de vértices onde cada vértice é adjacente ao próximo.
-- **Caminho Mínimo:** Caminho com o menor custo ou peso entre dois vértices.
-- **Ciclo:** Caminho fechado onde o vértice inicial é igual ao vértice final.
+Um algoritmo que explora o grafo o mais longe possível ao longo de cada ramo antes de retroceder.
 
-### Árvores Geradoras
+### Busca em Largura
 
-Uma árvore geradora de um grafo conectado é uma subestrutura que inclui todos os vértices do grafo, mas sem ciclos.
+Um algoritmo que explora todos os vértices de um grafo em "camadas", visitando todos os vizinhos de um vértice antes de avançar.
 
-### Grafo Orientado Acíclico (DAG)
+### Busca Gulosa
 
-Um grafo direcionado sem ciclos.
+Uma estratégia de busca que seleciona o caminho mais promissor até o momento, sem considerar o custo total.
 
-## Referências
+### Busca A* (A Estrela)
+
+Uma estratégia de busca informada que avalia os vértices considerando tanto o custo até o momento quanto uma estimativa do custo restante.
+
+### Dijkstra
+
+Um algoritmo para encontrar o caminho mais curto entre dois vértices em um grafo ponderado, sem arestas de peso negativo.
+
+### Referências
 
 - [Wikipedia - Grafo](https://pt.wikipedia.org/wiki/Grafo)
 - [GeeksforGeeks - Graph Data Structure And Algorithms](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 - Livro: "Introduction to Algorithms" - Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein.
+
+Este README oferece uma introdução abrangente aos conceitos básicos dos grafos, suas representações e alguns algoritmos fundamentais.
